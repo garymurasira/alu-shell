@@ -21,8 +21,8 @@ stop() {
 }
 
 restart() {
-    stop
-    start
+    stop >/dev/null
+    start >/dev/null
     echo "manage_my_process restarted"
 }
 
